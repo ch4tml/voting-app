@@ -1,0 +1,109 @@
+/* RAW HTML ELEMENTS */
+html{
+  height: 100%;
+  background-color: #339999;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+footer {
+  background-color: #FFFFFF;
+  height: 50px;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+img{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 5px #000000;
+  font-size: 80%;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+a:link {
+  color: #000000;
+}
+/* visited link */
+
+a:visited {
+  color: #000000;
+}
+/* mouse over link */
+
+a:hover {
+  color: #993333;
+  text-decoration: none;
+}
+
+
+/* JUMBOTRON */
+
+.jumbotron{
+  background-color: #339999;
+  opacity: 0.6;
+}
+
+#jumbotron-text {
+  background-color: #339999;
+  color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#skill, #accordion h2{
+  color: #993333;
+  font-weight: bold;
+}
+
+/* CLASSES */
+.btn, .btn:visited {
+  background: #339999;
+  color: #000000;
+  border-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  padding: 5% 5% 5% 5%;
+}
+
+.btn:hover {
+  background-color: #993333;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+.multiple-items {
+  text-align: center;
+}
+
+.active-button {
+  background-color: #339999;
+  color: #000000;
+}
+/* IDs*/
+
+#main{
+  font-size: 5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%); 
+}

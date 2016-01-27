@@ -1,0 +1,20 @@
+header
+  nav(class="col-xs-12 navbar navbar-default navbar-fixed-top", role='navigation')
+    div(class="navbar-header")
+      button(class="navbar-toggle", type='button', data-toggle='collapse', data-target='#navigation_menu')
+        span(class="icon-bar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+      a(class="navbar-brand", href='/') #{title}
+      // Begin navigationMenu - menu items expressed here will be "toggled" when small screen
+      // ul class given id so that jQuery can target specific li elements inside of it, but not other li elements in rest of DOM
+      
+    div(id="navigation_menu", class="collapse navbar-collapse")
+      ul(id="header_list_item", class="nav navbar-nav navbar-right")
+        li
+          a(href='/') Home
+        li
+          a(href='/') Sign Up
+        li
+          a(href='/') Log In
+  // Navigation menu
