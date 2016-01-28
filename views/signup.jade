@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div.container.sign-up-form
+        div.col-sm-6.col-sm-offset-3
+            h1
+                span.fa.fa-sign-in
+                |  Signup
+            // LOGIN FORM
+            // Show any messages that come back with authentication
+            script.
+                if (message.length > 0)
+                    div.alert alert-danger #{message}
+            form(action='/signup', method='post')
+                .form-group
+                    label Email
+                    input.form-control(type='text', name='email')
+                .form-group
+                    label Password
+                    input.form-control(type='password', name='password')
+                button.btn.btn-warning.btn-lg(type='submit') Signup
+            hr

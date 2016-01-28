@@ -112,7 +112,7 @@ a:hover {
 }
 /* IDs*/
 
-#main{
+#main, .login-form, .sign-up-form, .profile-form{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -120,4 +120,9 @@ a:hover {
   color: #ffffff;
 }
 
-/* Chart and Canvas */
+.profile-details{
+  color: #000000;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
