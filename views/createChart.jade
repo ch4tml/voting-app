@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    body.form
+        include ./chart.jade
+        form(action="/", method="post")
+            div
+                label(for="option1") Option:
+                input#option1(type="text")
+            div
+                label(for="option1") Option:
+                input#option1(type="text")
+            div
+                button.button.btn.btn-default(type="default") Add more options
+                button.button.btn.btn-default(type="submit") Create
