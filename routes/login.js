@@ -3,5 +3,5 @@
  */
  
 exports.login = function(req, res){
-  res.render('login', { title: 'Votr' });
+  res.render('login', { title: 'Poll & Votes' });
 };

@@ -1,22 +1,11 @@
+# Voting App
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Built as part of Free Code Camp's curriculum. "Dynamic Web Application Projects" Challenge series - [Voting App] (http://www.freecodecamp.com/challenges/build-a-voting-app).
 
+Based on the example service [provided] (https://fcc-voting-arthow4n.herokuapp.com/polls).
 
-Welcome to your Node.js project on Cloud9 IDE!
+### Heroku deployment: [Voting App] (https://ch4tml-votr.herokuapp.com/)
 
-This chat example showcases how to use `socket.io` with a static `express` server.
+## Author 
 
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+Built by [ch4tml](https://github.com/ch4tml/). Started on XXth January 2016 and finished on XXth February 2016.

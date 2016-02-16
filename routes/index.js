@@ -3,5 +3,5 @@
  */
  
 exports.index = function(req, res){
-  res.render('index', { title: 'Votr' });
+  res.render('index', { title: 'Poll & Votes' });
 };

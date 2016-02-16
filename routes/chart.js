@@ -3,5 +3,5 @@
  */
  
 exports.chart = function(req, res){
-  res.render('chart', { title: 'Votr' });
+  res.render('chart', { title: 'Poll & Votes' });
 };
