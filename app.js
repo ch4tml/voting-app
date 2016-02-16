@@ -13,10 +13,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session = require('express-session');
 
-/*var routes = require('./routes');
+var routes = require('./routes');
 var login = require("./routes/login");
 var chart = require("./routes/chart");
-var signup = require("./routes/signup");*/
+var signup = require("./routes/signup");
 var createChart = require("./routes/createChart");
 var http = require('http');
 var path = require('path');
@@ -51,13 +51,13 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-/*
+
 app.get('/', routes.index);
 app.get('/login', login.login);
 app.get('/chart', chart.chart);
 app.get("/signup", signup.signup);
-*/
-// Rooutes
+
+// Routes
 require('./app/routes.js')(app, passport);
 app.get("/create", createChart.createChart);
 app.post("/create", createChart.submit);

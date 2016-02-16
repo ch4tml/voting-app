@@ -3,5 +3,5 @@
  */
  
 exports.signup = function(req, res){
-  res.render('signup', { title: 'Votr' });
+  res.render('signup', { title: 'Poll & Votes' });
 };
