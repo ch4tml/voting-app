@@ -60,6 +60,7 @@ app.get("/signup", signup.signup);
 // Rooutes
 require('./app/routes.js')(app, passport);
 app.get("/create", createChart.createChart);
+app.post("/create", createChart.submit);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

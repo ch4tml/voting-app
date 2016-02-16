@@ -3,12 +3,12 @@ var mongoose = require('mongoose');
 // define the schema for our user model
 var pollSchema = mongoose.Schema({
 
-    datapoint: {
+    /*datapoint: {
         value       : Number,
         color       : String,
         highlight   : String,
         label       : String
-    },
+    },*/
     dataset: Array
 
 });
