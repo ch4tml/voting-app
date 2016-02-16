@@ -17,7 +17,7 @@ var routes = require('./routes');
 var login = require("./routes/login");
 var chart = require("./routes/chart");
 var signup = require("./routes/signup");
-var createChart = require("./routes/createChart");
+var create = require("./routes/create");
 var http = require('http');
 var path = require('path');
 
@@ -59,8 +59,8 @@ app.get("/signup", signup.signup);
 
 // Routes
 require('./app/routes.js')(app, passport);
-app.get("/create", createChart.createChart);
-app.post("/create", createChart.submit);
+app.get("/create", create.create);
+app.post("/create", create.submit);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

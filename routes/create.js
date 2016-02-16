@@ -1,12 +1,13 @@
 /*
- * GET createChart page.
+ * GET create page.
  */
  
  var Poll = require("../app/models/Poll.js");
  var randomColour = require("randomcolor");
+ var newChart = require("../public/javascripts/chartControl.js");
  
- exports.createChart = (req, res) => {
-    res.render("createChart", {
+ exports.create = (req, res) => {
+    res.render("create", {
         title: "Poll & Votes"
     });
 };
@@ -23,37 +24,43 @@
  */
 
 exports.submit = (req, res) => {
+    console.log(req.body);
+
     var poll = new Poll();
     
     poll.dataset.push({
         value       : 0,
         color       : randomColour(),
         highlight   : String,
-        label       : req.option1
+        label       : req.body.option1
     },
     {
         value       : 0,
         color       : randomColour(),
         highlight   : String,
-        label       : req.option2
+        label       : req.body.option2
     },
     {
         value       : 0,
         color       : randomColour(),
         highlight   : String,
-        label       : req.option3
+        label       : req.body.option3
     },
     {
         value       : 0,
         color       : randomColour(),
         highlight   : String,
-        label       : req.option4
+        label       : req.body.option4
     });
     
     poll.save((err) => {
         if (err) throw err;
         console.log("Successfully stored in the database");
     });
+
+    newChart.createNewChart(poll.dataset);
+        
+    res.redirect("/create");
 };
 
 /* // UPDATE EXISTING POLL
