@@ -4,7 +4,7 @@ Built as part of Free Code Camp's curriculum. "Dynamic Web Application Projects"
 
 Based on the example service [provided] (https://fcc-voting-arthow4n.herokuapp.com/polls).
 
-### Heroku deployment: [Voting App] (https://ch4tml-votr.herokuapp.com/)
+### Heroku deployment: [Voting App] (https://ch4tml-pollandvotes.herokuapp.com/)
 
 ## Author 
 
