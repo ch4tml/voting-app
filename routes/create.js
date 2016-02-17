@@ -24,31 +24,37 @@ exports.create = (req, res) => {
 
 exports.submit = (req, res) => {
     var poll = new Poll();
+    console.log(req.body);
+    poll.created = new Date();
     
-    poll.dataset.push({
-        value       : 0,
-        color       : randomColour(),
-        highlight   : String,
-        label       : req.body.option1
-    },
-    {
-        value       : 0,
-        color       : randomColour(),
-        highlight   : String,
-        label       : req.body.option2
-    },
-    {
-        value       : 0,
-        color       : randomColour(),
-        highlight   : String,
-        label       : req.body.option3
-    },
-    {
-        value       : 0,
-        color       : randomColour(),
-        highlight   : String,
-        label       : req.body.option4
-    });
+    
+    poll.polls.poll = {
+            title           : req.body.title,
+            dataset         : [{
+                value       : 0,
+                color       : randomColour(),
+                highlight   : String,
+                label       : req.body.option1
+            },
+            {
+                value       : 0,
+                color       : randomColour(),
+                highlight   : String,
+                label       : req.body.option2
+            },
+            {
+                value       : 0,
+                color       : randomColour(),
+                highlight   : String,
+                label       : req.body.option3
+            },
+            {
+                value       : 0,
+                color       : randomColour(),
+                highlight   : String,
+                label       : req.body.option4
+            }]
+        };
     
     poll.save((err) => {
         if (err) throw err;
