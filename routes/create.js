@@ -24,9 +24,9 @@ exports.create = (req, res) => {
 
 exports.submit = (req, res) => {
     var poll = new Poll();
-    poll.created = new Date();
     
     poll.polls.poll = {
+            created         : Date.now(),
             title           : req.body.title,
             dataset         : [{
                 value       : 0,

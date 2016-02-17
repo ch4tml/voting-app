@@ -3,10 +3,10 @@ var mongoose = require('mongoose');
 // define the schema for our user model
 var pollSchema = mongoose.Schema({
 
-  username	: String,
-  created	: Date,
   polls		: {
       poll: {
+          username	: String,
+          created   : Date,
           title     : String,
           dataset   : Array
       }
