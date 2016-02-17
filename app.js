@@ -5,6 +5,7 @@
 
 var express = require('express');
 var app = express();
+require('dotenv').config();
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash = require('connect-flash');
@@ -21,10 +22,11 @@ var create = require("./routes/create");
 var http = require('http');
 var path = require('path');
 
-var configDB = require('./config/database.js');
+//var configDB = require('./config/database.js');
+var configDB = process.env.MONGOLAB_URI || "mongodb://localhost:27017/users";
 
 // configuration ===============================================================
-mongoose.connect(configDB.url); // connect to our database
+mongoose.connect(configDB); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
 
