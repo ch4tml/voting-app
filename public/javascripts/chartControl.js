@@ -1,8 +1,6 @@
 $(document).ready(function(){
     "use strict";
-    // Get context with jQuery - using jQuery's .get() method.
     var ctx = $("#myChart").get(0).getContext("2d");
-    //var data = [];
     var myDoughnutChart;
     var opts = {
             //Boolean - Whether we should show a stroke on each segment
