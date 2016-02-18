@@ -61,7 +61,7 @@ exports.submit = (req, res) => {
 
     //newChart.createNewChart(poll.dataset);
  
-    res.redirect("/");
+    res.redirect("/create");
 };
 
 /* // UPDATE EXISTING POLL

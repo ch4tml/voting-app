@@ -3,6 +3,7 @@ extends layout
 block content
     h2 Create new poll
     body.form
+        include ./chart.jade
         form(action="/create", method="post")
            div
                 label(for="title") Poll title:
