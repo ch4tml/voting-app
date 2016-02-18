@@ -37,7 +37,7 @@ exports.getData = (req, res) => {
                   }
                 ];
         if(err) throw err;
-        if(docs.length === 0)
+        if(docs === null || docs.length === 0)
             res.send(JSON.stringify(data));
         else if(docs.length > 0){
             console.log("Returning data from database...");
