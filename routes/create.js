@@ -29,25 +29,25 @@ exports.submit = (req, res) => {
             created         : Date.now(),
             title           : req.body.title,
             dataset         : [{
-                value       : 0,
+                value       : 1,
                 color       : randomColour(),
                 highlight   : randomColour(),
                 label       : req.body.option1
             },
             {
-                value       : 0,
+                value       : 2,
                 color       : randomColour(),
                 highlight   : randomColour(),
                 label       : req.body.option2
             },
             {
-                value       : 0,
+                value       : 3,
                 color       : randomColour(),
                 highlight   : randomColour(),
                 label       : req.body.option3
             },
             {
-                value       : 0,
+                value       : 4,
                 color       : randomColour(),
                 highlight   : randomColour(),
                 label       : req.body.option4

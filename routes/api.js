@@ -4,7 +4,8 @@
 "use strict";
 
 var mongoose = require("mongoose");
-mongoose.createConnection(process.env.MONGOLAB_URI || "mongodb://localhost:27017/paths");
+//mongoose.createConnection(process.env.MONGOLAB_URI || "mongodb://localhost:27017/paths");
+mongoose.createConnection("mongodb://localhost:27017/paths");
 // Schema
 var Poll = require("../app/models/Poll");
  

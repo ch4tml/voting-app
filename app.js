@@ -24,7 +24,7 @@ var http = require('http');
 var path = require('path');
 
 //var configDB = require('./config/database.js');
-var configDB = process.env.MONGOLAB_URI || "mongodb://localhost:27017/users";
+var configDB = "mongodb://localhost:27017/users";
 
 // configuration ===============================================================
 mongoose.connect(configDB); // connect to our database
