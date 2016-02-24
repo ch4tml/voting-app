@@ -25,7 +25,7 @@ $(document).ready(function(){
         };
     function getData(){
         return $.ajax({
-            url: "/api",
+            url: "/api/random",
             type: "get"
         });
     }
